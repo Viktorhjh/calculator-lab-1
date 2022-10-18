@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			<input name="result">
+		</div>
+
+		<div class="buttons">
+			<div>
+				<button onclick="clearAll()" id="bigButton" type="reset">C</button>
+				<button onclick="number('.')">.</button>
+				<button onclick="action('/')">/</button>
+			</div>
+			<div>
+				<button onclick="number(7)">7</button>
+				<button onclick="number(8)">8</button>
+				<button onclick="number(9)">9</button>
+				<button onclick="action('*')">*</button>
+			</div>
+			<div>
+				<button onclick="number(4)">4</button>
+				<button onclick="number(5)">5</button>
+				<button onclick="number(6)">6</button>
+				<button onclick="action('-')">-</button>
+			</div>
+			<div>
+				<button onclick="number(1)">1</button>
+				<button onclick="number(2)">2</button>
+				<button onclick="number(3)">3</button>
+				<button onclick="action('+')">+</button>
+			</div>
+			<button onclick="action('+-')">&#177;</button>
+			<button onclick="number(0)">0</button>
+			<button id="bigButton" onclick="result()">=</button>
+		</div>
+	</div>
+</body>
+</html>
